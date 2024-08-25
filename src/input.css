@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to your custom CSS file or Tailwind configuration */
+.text-peach-500 {
+    color: #FEC89A; /* Peach color */
+}
+
+.text-peach-300 {
+    color: #FEC89A; /* Peach color */
+    opacity: 0.6;   /* Adjust opacity as needed */
+}

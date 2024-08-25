@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Add some margin to the top of the body to prevent content from hiding behind the sticky header */
+        body {
+            margin-top: 64px; /* Adjust this value based on the height of your sticky header */
+        }
+
+        /* Dropdown menu visibility */
+        #dropdown-toggle:checked + label + #dropdown-menu {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-white dark:bg-black dark:text-white">
+    <div class="bg-white p-4 rounded-lg flex justify-center items-center w-full max-w-[500px] mx-auto h-auto">
+        <a href="#hero">
+            <img src="./img/Logo_image.png" alt="logo" width="180" height="100" class="-ml-8">
+        </a>
+    </div>      
+    <header class="sticky top-0 z-50 w-full bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-md">
+        <nav class="w-full px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Mobile Button (for small screens) -->
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="text-3xl sm:hidden cursor-pointer focus:outline-none">
+                    &#9776;
+                </label>
+              
+                <!-- Navigation Links in the center with more space between them -->
+                <div class="flex-1 flex items-center justify-center space-x-8 text-gray-900">
+                    <a href="#Hero" class="hover:text-gray-600 focus:underline active:underline">Home</a>
+
+                    <!-- Events Link with Dropdown -->
+                    <div class="relative">
+                        <!-- Hidden checkbox to toggle dropdown visibility -->
+                        <input type="checkbox" id="dropdown-toggle" class="hidden" />
+
+                        <!-- Button to open dropdown -->
+                        <label for="dropdown-toggle" class="flex items-center text-gray-900 hover:text-gray-600 cursor-pointer">
+                            <span>Events</span>
+                            <svg class="w-2.5 h-2.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </label>
+
+                        <!-- Dropdown Menu -->
+                        <div id="dropdown-menu" class="absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2 opacity-0 transition-opacity duration-300">
+                            <ul class="py-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="#Birthday" class="block px-4 py-2 hover:bg-gray-100">Birthday Parties</a>
+                                </li>
+                                <li>
+                                    <a href="#Photography" class="block px-4 py-2 hover:bg-gray-100">Photography Session</a>
+                                </li>
+                                <li>
+                                    <a href="#Wedding" class="block px-4 py-2 hover:bg-gray-100">Weddings</a>
+                                </li>
+                                <li>
+                                    <a href="#Corporate" class="block px-4 py-2 hover:bg-gray-100">Corporate Events</a>
+                                </li>
+                                <li>
+                                    <a href="#Workshop" class="block px-4 py-2 hover:bg-gray-100">Workshop and Seminars</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#Gallery" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
+                    <a href="#About" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
+                    <a href="#Booking" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
+                    <a href="#Contact" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
+                </div>
+                
+                <!-- Buttons on the right end -->
+                <div class="hidden sm:flex space-x-4">
+                    <button class="px-6 py-2 rounded-md bg-black bg-opacity-30 text-white hover:bg-black hover:bg-opacity-100 transition duration-300">
+                        Login
+                    </button>
+                    <button class="px-6 py-2 rounded-md bg-transparent border border-black text-black hover:bg-white hover:text-black transition duration-300">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="hero" class="relative flex flex-col-reverse sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 h-screen">
+        <!-- Background Image -->
+        <img src="./img/front_page_image.jpg" alt="Hero" class="absolute inset-0 object-cover w-full h-full z-[-1]">
+    
+        <!-- Content -->
+        <article class="relative z-10 flex flex-col items-center justify-center w-full h-full text-center">
+            <h2 class="text-6xl font-bold sm:text-7xl text-peach-500 opacity-80">
+                "Creating Moments That Matter"
+            </h2>
+            
+            <p class="text-2xl mt-[30px] text-amber-700 italic">
+                Bringing your events to life with elegance and excellence – where every detail counts and every memory is cherished.
+            </p>
+        </article>
+    </section>
+</body>
+
+</html>
+
