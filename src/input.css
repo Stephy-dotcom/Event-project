@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Add some margin to the top of the body to prevent content from hiding behind the sticky header */
+body {
+    margin-top: 64px; /* Adjust this value based on the height of your sticky header */
+}
+
+/* Dropdown menu visibility */
+#dropdown-toggle:checked + label + #dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
 /* Add this to your custom CSS file or Tailwind configuration */
 .text-peach-500 {
     color: #FEC89A; /* Peach color */
@@ -11,3 +23,88 @@
     color: #FEC89A; /* Peach color */
     opacity: 0.6;   /* Adjust opacity as needed */
 }
+
+.circle {
+    border-radius: 68px;
+    background: #d7b493;
+    box-shadow: 11px 11px 100px #b99b7e, -11px -11px 100px #f5cda8;
+  }
+
+
+
+
+.moderustic {
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 414;
+  font-style: normal;
+}
+
+/* Beat animation */
+.group:hover .fa-briefcase,
+.group:hover .fa-headset,
+.group:hover .fa-smile,
+.group:hover .fa-users {
+    animation: fa-beat 0.5s infinite;
+}
+
+.text-hover-brown:hover {
+    color: #b7775c; 
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+  }
+  .accordion-input:checked + .accordion-toggle + .accordion-content {
+    max-height: 500px; /* Adjust based on your content */
+    opacity: 1;
+  }
+  .accordion-toggle::after {
+    content: '▼';
+    font-size: 1rem;
+    margin-left: auto;
+    transition: transform 0.3s ease-out;
+  }
+  .accordion-input:checked + .accordion-toggle::after {
+    content: '▲';
+  }
+  .accordion-toggle {
+    cursor: pointer;
+  }
+
+
+  .carousel-container {
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+  }
+  .carousel-slide {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 1rem; /* Space between slides */
+  }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
+  }
+  .carousel-button.left {
+    left: 0;
+  }
+  .carousel-button.right {
+    right: 0;
+  }

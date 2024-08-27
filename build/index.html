@@ -6,25 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Add some margin to the top of the body to prevent content from hiding behind the sticky header */
-        body {
-            margin-top: 64px; /* Adjust this value based on the height of your sticky header */
-        }
+     <!-- Font Awesome for icons -->
+      <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        /* Dropdown menu visibility */
-        #dropdown-toggle:checked + label + #dropdown-menu {
-            display: block;
-            opacity: 1;
-        }
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@414&display=swap" rel="stylesheet">
 </head>
 
 <body class="min-h-screen bg-white dark:bg-black dark:text-white">
     <div class="bg-white p-4 rounded-lg flex justify-center items-center w-full max-w-[500px] mx-auto h-auto">
         <a href="#hero">
-            <img src="./img/Logo_image.png" alt="logo" width="180" height="100" class="-ml-8">
+            <img src="./img/Logo_image.png" alt="logo" width="180" height="100" class="-ml-8 -mt-">
         </a>
     </div>      
     <header class="sticky top-0 z-50 w-full bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-md">
@@ -83,10 +79,13 @@
                 
                 <!-- Buttons on the right end -->
                 <div class="hidden sm:flex space-x-4">
-                    <button class="px-6 py-2 rounded-md bg-black bg-opacity-30 text-white hover:bg-black hover:bg-opacity-100 transition duration-300">
+                    <!-- Login Button -->
+                    <button class="px-6 py-2 rounded-md bg-[#d7b493] text-white hover:bg-[#bfa37a] transition duration-300">
                         Login
                     </button>
-                    <button class="px-6 py-2 rounded-md bg-transparent border border-black text-black hover:bg-white hover:text-black transition duration-300">
+
+                    <!-- Sign Up Button -->
+                    <button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#d7b493] hover:bg-[#d7b493] hover:text-white transition duration-300">
                         Sign Up
                     </button>
                 </div>
@@ -109,7 +108,361 @@
             </p>
         </article>
     </section>
-</body>
 
+    <!-- WHY US -->
+    <section class="py-12 bg-white moderustic">
+        <h1 class="mb-20 mt-10 text-5xl font-bold text-center text-[#d7b493]">WHY US</h1>
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- Card 1 -->
+              <div class="p-4 bg-white rounded-lg">
+                <div class="flex justify-center items-center mb-4">
+                  <div class="circle w-16 h-16 flex justify-center items-center">
+                    <!-- Example Icon for Card 1 -->
+                    <i class="fas fa-star text-2xl text-gray-600"></i>
+                  </div>
+                </div>
+                <h3 class="text-center text-xl font-semibold mb-5 mt-10">Experience and Expertise</h3>
+                <p class="px-4 text-justify text-gray-700">
+                  With over 15 years in the event management industry, our team has orchestrated numerous successful events, bringing a wealth of expertise.
+                </p>
+              </div>
+              <!-- Card 2 -->
+              <div class="p-4 bg-white rounded-lg">
+                <div class="flex justify-center items-center mb-4">
+                  <div class="circle w-16 h-16 flex justify-center items-center">
+                    <!-- Example Icon for Card 2 -->
+                    <i class="fas fa-calendar-alt text-2xl text-gray-600"></i>
+                  </div>
+                </div>
+                <h3 class="text-center text-xl font-semibold mb-5 mt-10">Comprehensive Services</h3>
+                <p class="px-4 text-justify text-gray-700">
+                  From venue selection to entertainment, we provide complete event management services to make your occasion truly memorable.
+                </p>
+              </div>
+              <!-- Card 3 -->
+              <div class="p-4 bg-white rounded-lg">
+                <div class="flex justify-center items-center mb-4">
+                  <div class="circle w-16 h-16 flex justify-center items-center">
+                    <!-- Example Icon for Card 3 -->
+                    <i class="fas fa-user-tie text-2xl text-gray-600"></i>
+                  </div>
+                </div>
+                <h3 class="text-center text-xl font-semibold mb-5 mt-10">Personalized Approach</h3>
+                <p class="px-4 text-justify text-gray-700">
+                  We work closely with you to bring your vision to life, crafting tailored solutions that reflect your style and goals.
+                </p>
+              </div>
+              <!-- Card 4 -->
+              <div class="p-4 bg-white rounded-lg">
+                <div class="flex justify-center items-center mb-4">
+                  <div class="circle w-16 h-16 flex justify-center items-center">
+                    <!-- Example Icon for Card 4 -->
+                    <i class="fas fa-trophy text-2xl text-gray-600"></i>
+                  </div>
+                </div>
+                <h3 class="text-center text-xl font-semibold mb-5 mt-10">Proven Track Record</h3>
+                <p class="px-4 text-justify text-gray-700">
+                  Our track record of success and glowing client testimonials demonstrate our commitment to excellence in event management.
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- Our Past Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center text-[#d7b493] mb-12">OUR PAST</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Corporate Events Done -->
+                <div class="flex flex-col items-center text-center p-6 group">
+                    <div class="text-6xl text-[#d7b493] mb-4">
+                        <i class="fas fa-briefcase transition-colors duration-300 group-hover:text-[#b59878]"></i>
+                    </div>
+                    <p class="text-3xl mb-7 font-semibold text-gray-900 ">1000</p>
+                    <p class="text-sm text-gray-600">Corporate Events Done</p>
+                </div>
+
+                <!-- Corporate Event Consultations Offered -->
+                <div class="flex flex-col items-center text-center p-6 group">
+                    <div class="text-6xl text-[#d7b493] mb-4">
+                        <i class="fas fa-headset transition-colors duration-300 group-hover:text-[#b59878]"></i>
+                    </div>
+                    <p class="text-3xl mb-7 font-semibold text-gray-900">78</p>
+                    <p class="text-sm text-gray-600">Corporate Event Consultations Offered</p>
+                </div>
+
+                <!-- Happy Clients -->
+                <div class="flex flex-col items-center text-center p-6 group">
+                    <div class="text-6xl text-[#d7b493] mb-4">
+                        <i class="fas fa-smile transition-colors duration-300 group-hover:text-[#b59878]"></i>
+                    </div>
+                    <p class="text-3xl mb-7 font-semibold text-gray-900">123</p>
+                    <p class="text-sm text-gray-600">Happy Clients</p>
+                </div>
+
+                <!-- Happy Employees -->
+                <div class="flex flex-col items-center text-center p-6 group">
+                    <div class="text-6xl text-[#d7b493] mb-4">
+                        <i class="fas fa-users transition-colors duration-300 group-hover:text-[#b59878]"></i>
+                    </div>
+                    <p class="text-3xl mb-7 font-semibold text-gray-900">30</p>
+                    <p class="text-sm text-gray-600">Happy Employees</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="py-16 relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="./img/concert-4768496_1920.jpg" alt="Background" class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="relative container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center text-[#d7b493] mb-12">OUR SERVICES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Birthday Parties -->
+                <a href="birthday-parties.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
+                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/birthday-1.jpeg');"></div>
+                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
+                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Birthday Parties</p>
+                        <hr class="w-16 border-t-2 border-white mt-3">
+                    </div>
+                </a>
+                
+                <!-- Photography Sessions -->
+                <a href="photography-sessions.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
+                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/photography_session-1.jpg');"></div>
+                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
+                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Photography Sessions</p>
+                        <hr class="w-16 border-t-2 border-white mt-3">
+                    </div>
+                </a>
+                
+                <!-- Weddings -->
+                <a href="weddings.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
+                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/wedding-1.jpg');"></div>
+                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
+                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Weddings</p>
+                        <hr class="w-16 border-t-2 border-white mt-3">
+                    </div>
+                </a>
+
+                <!-- Corporate Events -->
+                <a href="corporate-events.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
+                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/Corporate-1.jpeg');"></div>
+                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
+                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Corporate Events</p>
+                        <hr class="w-16 border-t-2 border-white mt-3">
+                    </div>
+                </a>
+                
+                <!-- Workshops and Seminars -->
+                <a href="workshops-seminars.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
+                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/seminar-1.jpeg');"></div>
+                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
+                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Workshops and Seminars</p>
+                        <hr class="w-16 border-t-2 border-white mt-3">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="py-12">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="mb-20 mt-10 text-5xl font-bold text-center text-[#d7b493]">Our Trusted Partners</h2>
+          <div class="relative">
+            <div class="carousel-container">
+              <!-- Slide 1 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+1" alt="Partner 1" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+2" alt="Partner 2" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+3" alt="Partner 3" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
+              </div>
+              
+            </div>
+            <!-- Navigation Buttons -->
+            <button class="carousel-button left">&#10094;</button>
+            <button class="carousel-button right">&#10095;</button>
+          </div>
+        </div>
+      </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 lg:flex-row lg:justify-between max-lg:max-w-2xl mx-auto max-w-full">
+            <div class="w-full lg:w-1/2">
+              <!-- Placeholder for the image -->
+              <img src="./img/faq.jpg" alt="FAQ" class="w-full rounded-xl"/>
+            </div>
+            <div class="w-full lg:w-1/2 lg:max-w-xl">
+              <div class="mb-6 lg:mb-16">
+                <h6 class="text-lg text-center font-medium text-indigo-600 mb-2 lg:text-left">FAQs</h6>
+                <h2 class="text-4xl text-center font-bold text-gray-900 leading-[3.25rem] mb-5 lg:text-left">Looking for answers?</h2>
+              </div>
+              <div class="accordion-group">
+                <!-- Accordion 1 -->
+                <div class="accordion-item mb-4 border-b border-gray-200">
+                  <input type="checkbox" id="accordion1" class="hidden accordion-input">
+                  <label for="accordion1" class="accordion-toggle flex items-center justify-between p-4 text-lg font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-100">How to create an account?</label>
+                  <div class="accordion-content p-4 bg-white border border-t-0 border-gray-300 rounded-b-md">
+                    <p class="text-gray-700">To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
+                  </div>
+                </div>
+    
+                <!-- Accordion 2 -->
+                <div class="accordion-item mb-4 border-b border-gray-200">
+                  <input type="checkbox" id="accordion2" class="hidden accordion-input">
+                  <label for="accordion2" class="accordion-toggle flex items-center justify-between p-4 text-lg font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-100">Have any trust issue?</label>
+                  <div class="accordion-content p-4 bg-white border border-t-0 border-gray-300 rounded-b-md">
+                    <p class="text-gray-500">Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence and achieve your content marketing goals with ease.</p>
+                  </div>
+                </div>
+    
+                <!-- Accordion 3 -->
+                <div class="accordion-item mb-4 border-b border-gray-200">
+                  <input type="checkbox" id="accordion3" class="hidden accordion-input">
+                  <label for="accordion3" class="accordion-toggle flex items-center justify-between p-4 text-lg font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-100">How can I reset my password?</label>
+                  <div class="accordion-content p-4 bg-white border border-t-0 border-gray-300 rounded-b-md">
+                    <p class="text-gray-500">If you forgot your password, click on the 'Forgot Password' link on the login page. Enter your registered email address, and you will receive instructions to reset your password via email.</p>
+                  </div>
+                </div>
+    
+                <!-- Accordion 4 -->
+                <div class="accordion-item border-b border-gray-200">
+                  <input type="checkbox" id="accordion4" class="hidden accordion-input">
+                  <label for="accordion4" class="accordion-toggle flex items-center justify-between p-4 text-lg font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-100">What is the payment process?</label>
+                  <div class="accordion-content p-4 bg-white border border-t-0 border-gray-300 rounded-b-md">
+                    <p class="text-gray-500">To make a payment, choose your preferred payment method during checkout. Follow the instructions to complete the transaction. You will receive a confirmation email once the payment is successful.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+      
+    <!-- Footer Section -->
+    <footer class="bg-[#d7b493] lg:grid lg:grid-cols-5">
+        <div class="relative block h-32 lg:col-span-2 lg:h-full">
+        <img src="./img/footer_image.jpg" alt="Event Management" class="absolute inset-0 h-full w-full object-cover"/>
+        </div>
+    
+        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <!-- About Us Section -->
+            <div>
+            <h2 class="text-lg font-semibold text-gray-900">About Us</h2>
+            <p class="mt-4 text-sm text-gray-700">
+                We are a leading event management company specializing in creating unforgettable experiences. 
+                Our team is dedicated to providing exceptional service and personalized solutions for all types of events.
+            </p>
+            </div>
+    
+            <!-- Testimonials Section -->
+            <div>
+            <h2 class="text-lg font-semibold text-gray-900">Testimonials</h2>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                <li>"The team made our wedding day perfect. Highly recommended!" - Jane D.</li>
+                <li>"Exceptional service for our corporate event. Everything went smoothly." - John S.</li>
+            </ul>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div>
+            <h2 class="text-lg font-semibold text-gray-900">Contact Us</h2>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                <li>
+                <span class="text-xs uppercase tracking-wide text-gray-500">Email</span>
+                <a href="mailto:info@example.com" class="block text-xl font-medium text-gray-900 hover:opacity-75">
+                    info@example.com
+                </a>
+                </li>
+                <li>
+                <span class="text-xs uppercase tracking-wide text-gray-500">Phone</span>
+                <a href="tel:+0123456789" class="block text-xl font-medium text-gray-900 hover:opacity-75">
+                    0123456789
+                </a>
+                </li>
+            </ul>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div>
+            <h2 class="text-lg font-semibold text-gray-900">Follow Us</h2>
+            <ul class="mt-4 flex gap-6">
+                <li>
+                <a href="https://www.facebook.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Facebook</span>
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.pinterest.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Pinterest</span>
+                    <i class="fab fa-pinterest-p fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.twitter.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.instagram.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+ 
+</body>
 </html>
 
