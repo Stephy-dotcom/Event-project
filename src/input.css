@@ -76,35 +76,42 @@ body {
   }
 
 
-  .carousel-container {
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    display: flex;
+/* Container for the carousel */
+.carousel-container {
+  display: flex;
+  overflow: hidden; /* Hide scrollbar */
+  width: 100%;
+  position: relative;
+}
+
+/* Wrapper for the slides */
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+/* Each slide */
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 200px; /* Adjust as needed */
+  margin-right: 10px; /* Space between slides */
+}
+
+/* Image styling */
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Keyframes for sliding animation */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
   }
-  .carousel-slide {
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-    width: 200px; /* Adjust width as needed */
-    height: auto;
-    margin-right: 1rem; /* Space between slides */
+  100% {
+      transform: translateX(-100%);
   }
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 0.5rem;
-    cursor: pointer;
-    z-index: 10;
-    width: 2rem;
-    height: 2rem;
-  }
-  .carousel-button.left {
-    left: 0;
-  }
-  .carousel-button.right {
-    right: 0;
-  }
+}

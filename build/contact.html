@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+          <!-- Font Awesome CDN -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@414&display=swap" rel="stylesheet">
+
+          <style>
+            #bg {
+                background-image: url(./img/_Autumn\ Aesthetics_\ 2023\ Fall\ Wallpaper\ Inspirations_.jpeg);
+                height: 650px;
+                background-repeat: no-repeat; /* Prevents the background from repeating */
+                background-size: cover; /* Makes the background cover the entire area */
+                background-position: center; /* Centers the image */
+            }
+            
+        
+        </style>
+        
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 w-full bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-md">
+        <nav class="w-full px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Mobile Button (for small screens) -->
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="text-3xl sm:hidden cursor-pointer focus:outline-none">
+                    &#9776;
+                </label>
+              
+                <!-- Navigation Links in the center with more space between them -->
+                <div class="flex-1 flex items-center justify-center space-x-8 text-gray-900">
+                    <a href="./index.html" class="hover:text-gray-600 focus:underline active:underline">Home</a>
+
+                    <!-- Events Link with Dropdown -->
+                    <div class="relative">
+                        <!-- Hidden checkbox to toggle dropdown visibility -->
+                        <input type="checkbox" id="dropdown-toggle" class="hidden" />
+
+                        <!-- Button to open dropdown -->
+                        <label for="dropdown-toggle" class="flex items-center text-gray-900 hover:text-gray-600 cursor-pointer">
+                            <span>Events</span>
+                            <svg class="w-2.5 h-2.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </label>
+
+                        <!-- Dropdown Menu -->
+                        <div id="dropdown-menu" class="absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2 opacity-0 transition-opacity duration-300">
+                            <ul class="py-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="./birthday.html" class="block px-4 py-2 hover:bg-gray-100">Birthday Parties</a>
+                                </li>
+                                <li>
+                                    <a href="./photography.html" class="block px-4 py-2 hover:bg-gray-100">Photography Session</a>
+                                </li>
+                                <li>
+                                    <a href="./wedding.html" class="block px-4 py-2 hover:bg-gray-100">Weddings</a>
+                                </li>
+                                <li>
+                                    <a href="./coporate.html" class="block px-4 py-2 hover:bg-gray-100">Corporate Events</a>
+                                </li>
+                                <li>
+                                    <a href="./seminar.html" class="block px-4 py-2 hover:bg-gray-100">Workshop and Seminars</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#Gallery" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
+                    <a href="#About" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
+                    <a href="#Booking" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
+                    <a href="./contact.html" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
+                </div>
+                
+                <!-- Buttons on the right end -->
+                <div class="hidden sm:flex space-x-4">
+                    <!-- Login Button -->
+                    <button class="px-6 py-2 rounded-md bg-[#d7b493] text-black hover:bg-[#bfa37a] transition duration-300">
+                        Login
+                    </button>
+
+                    <!-- Sign Up Button -->
+                    <button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#482c11] hover:bg-[#3a240f]  transition duration-300">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <!-- Contact Form Section  -->
+        <section id="bg">
+            <!-- Background Image  -->
+
+            <div class="relative max-w-2xl mx-auto px-4"><br><br>
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8" style="font-family: 'Dancing Script', cursive;">
+                    Contact Us</h2>
+
+                <form action="#" method="POST" class=" bg-transparent p-6 rounded-lg shadow-md ">
+                    <!-- Name Field -->
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 "
+                            placeholder="Name........" style="font-family: Dancing Script, cursive;">
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            placeholder="Email........" style="font-family: Dancing Script, cursive;">
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            placeholder="Message........" style="font-family: Dancing Script, cursive;"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-gray-700 text-white font-semibold px-6 py-2 rounded-lg hover:bg-black transition transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section><br>
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8" style="font-family: 'Dancing Script', cursive;">
+                Location</h2>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.31470835354!2d76.1361171404911!3d9.982854198002483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1725552825012!5m2!1sen!2sin" width="800" height="500" style="margin-left: 20%;" ></iframe>
+        </section>
+
+    </div>
+</body>
+
+</html>

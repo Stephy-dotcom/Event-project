@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>booking</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome for icons -->
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@414&display=swap" rel="stylesheet">
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(./img/front_page_image.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1{
+      padding-top: 30px;
+      
+    }
+    form {
+      width: 300px;
+      /* Set a fixed width for the form */
+      background-color: whitesmoke;
+      opacity: 50%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      width: 500px;
+      background:transparent; 
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      
+    }
+    td{
+      padding:5px;
+      margin:10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      width: 48%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 w-full bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-md">
+    <nav class="w-full px-4">
+        <div class="flex items-center justify-between h-16">
+            <!-- Mobile Button (for small screens) -->
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="text-3xl sm:hidden cursor-pointer focus:outline-none">
+                &#9776;
+            </label>
+          
+            <!-- Navigation Links in the center with more space between them -->
+            <div class="flex-1 flex items-center justify-center space-x-8 text-gray-900">
+                <a href="./index.html" class="hover:text-gray-600 focus:underline active:underline">Home</a>
+
+                <!-- Events Link with Dropdown -->
+                <div class="relative">
+                    <!-- Hidden checkbox to toggle dropdown visibility -->
+                    <input type="checkbox" id="dropdown-toggle" class="hidden" />
+
+                    <!-- Button to open dropdown -->
+                    <label for="dropdown-toggle" class="flex items-center text-gray-900 hover:text-gray-600 cursor-pointer">
+                        <span>Events</span>
+                        <svg class="w-2.5 h-2.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                    </label>
+
+                    <!-- Dropdown Menu -->
+                    <div id="dropdown-menu" class="absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2 opacity-0 transition-opacity duration-300">
+                        <ul class="py-2 text-sm text-gray-700">
+                            <li>
+                                <a href="./birthday.html" class="block px-4 py-2 hover:bg-gray-100">Birthday Parties</a>
+                            </li>
+                            <li>
+                                <a href="./photography.html" class="block px-4 py-2 hover:bg-gray-100">Photography Session</a>
+                            </li>
+                            <li>
+                                <a href="./wedding.html" class="block px-4 py-2 hover:bg-gray-100">Weddings</a>
+                            </li>
+                            <li>
+                                <a href="./corporate.html" class="block px-4 py-2 hover:bg-gray-100">Corporate Events</a>
+                            </li>
+                            <li>
+                                <a href="./workshop.html" class="block px-4 py-2 hover:bg-gray-100">Workshop and Seminars</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="./gallery.html" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
+                <a href="./about.html" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
+                <a href="./booking.html" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
+                <a href="./contact.html" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
+            </div>
+            
+            <!-- Buttons on the right end -->
+            <div class="hidden sm:flex space-x-4">
+                <!-- Login Button -->
+                <button class="px-6 py-2 rounded-md bg-[#d7b493] text-white hover:bg-[#bfa37a] transition duration-300">
+                    Login
+                </button>
+
+                <!-- Sign Up Button -->
+                <button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#d7b493] hover:bg-[#d7b493] hover:text-white transition duration-300">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <h1>BOOK YOUR EVENT NOW</h1>
+  <table>
+    <form action="">
+      <tr>
+        <td><label for="f_name">FULL NAME: </label></td>
+        <td><input type="text" placeholder="ENTER FULL NAME" name="f_name"></td>
+      </tr>
+      <tr>
+        <td><label for="emailid">EMAIL: </label></td>
+        <td><input type="email" name="emailid" placeholder="Enter your email"></td>
+      </tr>
+      <tr>
+        <td><label for="phone">PHONE: </label></td>
+        <td><input type="tel" name="phone" placeholder="enter phone number "></td>
+      </tr>
+      <tr>
+        <td><label for="event_date">EVENT DATE: </label></td>
+        <td><input type="date" name="event_date"></td>
+      </tr>
+      <tr>
+        <td><label for="type_eve">EVENT TYPE: </label></td>
+        <td>
+          <select name="type_eve" id="">
+            <option value="null" hidden>--select here--</option>
+            <option value="wed">WEDDING</option>
+            <option value="bday">BIRTHDAY</option>
+            <option value="funeral">FUNERAL</option>
+            <option value="party">SURPRISE PARTY</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="guests">NUMBER OF GUESTS: </label></td>
+        <td><input type="number" name="guests" id="" placeholder="enter the size of the event here"></td>
+      </tr>
+      <tr>
+        <td><label for="venue">VENUE: </label></td>
+        <td><textarea name="venue" id="" placeholder="paste the location link here"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="notes">NOTES: </label></td>
+        <td><textarea name="notes" id="" placeholder="enter any special requests here"></textarea></td>
+      </tr>
+      <tr align="center">
+        <td colspan="2">
+          <input type="submit" value="pay now">
+          <input type="reset" value="clear">
+        </td>
+      </tr>
+    </form>
+  </table>
+</body>
+
+</html>

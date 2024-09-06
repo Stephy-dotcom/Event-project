@@ -18,11 +18,14 @@
 </head>
 
 <body class="min-h-screen bg-white dark:bg-black dark:text-white">
+  <!-- Logo -->
     <div class="bg-white p-4 rounded-lg flex justify-center items-center w-full max-w-[500px] mx-auto h-auto">
         <a href="#hero">
-            <img src="./img/Logo_image.png" alt="logo" width="180" height="100" class="-ml-8 -mt-">
+            <img src="./img/Logo_image.png" alt="logo" width="180" height="100" class="-ml-8 mt-0">
         </a>
-    </div>      
+    </div> 
+    
+    <!-- Navbar -->
     <header class="sticky top-0 z-50 w-full bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-md">
         <nav class="w-full px-4">
             <div class="flex items-center justify-between h-16">
@@ -34,7 +37,7 @@
               
                 <!-- Navigation Links in the center with more space between them -->
                 <div class="flex-1 flex items-center justify-center space-x-8 text-gray-900">
-                    <a href="#Hero" class="hover:text-gray-600 focus:underline active:underline">Home</a>
+                    <a href="./index.html" class="hover:text-gray-600 focus:underline active:underline">Home</a>
 
                     <!-- Events Link with Dropdown -->
                     <div class="relative">
@@ -53,58 +56,59 @@
                         <div id="dropdown-menu" class="absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2 opacity-0 transition-opacity duration-300">
                             <ul class="py-2 text-sm text-gray-700">
                                 <li>
-                                    <a href="#Birthday" class="block px-4 py-2 hover:bg-gray-100">Birthday Parties</a>
+                                    <a href="./birthday.html" class="block px-4 py-2 hover:bg-gray-100">Birthday Parties</a>
                                 </li>
                                 <li>
-                                    <a href="#Photography" class="block px-4 py-2 hover:bg-gray-100">Photography Session</a>
+                                    <a href="./photography.html" class="block px-4 py-2 hover:bg-gray-100">Photography Session</a>
                                 </li>
                                 <li>
-                                    <a href="#Wedding" class="block px-4 py-2 hover:bg-gray-100">Weddings</a>
+                                    <a href="./wedding.html" class="block px-4 py-2 hover:bg-gray-100">Weddings</a>
                                 </li>
                                 <li>
-                                    <a href="#Corporate" class="block px-4 py-2 hover:bg-gray-100">Corporate Events</a>
+                                    <a href="./corporate.html" class="block px-4 py-2 hover:bg-gray-100">Corporate Events</a>
                                 </li>
                                 <li>
-                                    <a href="#Workshop" class="block px-4 py-2 hover:bg-gray-100">Workshop and Seminars</a>
+                                    <a href="./workshop.html" class="block px-4 py-2 hover:bg-gray-100">Workshop and Seminars</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <a href="#Gallery" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
-                    <a href="#About" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
-                    <a href="#Booking" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
-                    <a href="#Contact" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
+                    <a href="./gallery.html" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
+                    <a href="./about.html" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
+                    <a href="./booking.html" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
+                    <a href="./contact.html" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
                 </div>
                 
                 <!-- Buttons on the right end -->
                 <div class="hidden sm:flex space-x-4">
                     <!-- Login Button -->
-                    <button class="px-6 py-2 rounded-md bg-[#d7b493] text-white hover:bg-[#bfa37a] transition duration-300">
+                    <a href="./login.html"><button class="px-6 py-2 rounded-md bg-[#d7b493] text-white hover:bg-[#bfa37a] transition duration-300">
                         Login
-                    </button>
+                    </button></a>
 
                     <!-- Sign Up Button -->
-                    <button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#d7b493] hover:bg-[#d7b493] hover:text-white transition duration-300">
+                    <a href="./signup.html"><button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#d7b493] hover:bg-[#d7b493] hover:text-white transition duration-300">
                         Sign Up
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </nav>
     </header>
     
+    <!-- Hero Section -->
     <section id="hero" class="relative flex flex-col-reverse sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 h-screen">
         <!-- Background Image -->
         <img src="./img/front_page_image.jpg" alt="Hero" class="absolute inset-0 object-cover w-full h-full z-[-1]">
     
         <!-- Content -->
-        <article class="relative z-10 flex flex-col items-center justify-center w-full h-full text-center">
-            <h2 class="text-6xl font-bold sm:text-7xl text-peach-500 opacity-80">
+        <article class="absolute z-10 top-26 left-0 flex flex-col items-center justify-center w-full h-full text-center">
+            <h2 class="text-6xl font-bold sm:text-7xl text-peach-500 opacity-80 mt-[320px]">
                 "Creating Moments That Matter"
             </h2>
             
-            <p class="text-2xl mt-[30px] text-amber-700 italic">
-                Bringing your events to life with elegance and excellence – where every detail counts and every memory is cherished.
+            <p class="text-2xl mt-[30px] text-[#d7b493] italic ">
+                <br><br>Bringing your events to life with elegance and excellence – where every detail counts and every memory is cherished.
             </p>
         </article>
     </section>
@@ -217,116 +221,152 @@
 
     <!-- Our Services Section -->
     <section class="py-16 relative">
-        <!-- Background Image -->
-        <div class="absolute inset-0">
-            <img src="./img/concert-4768496_1920.jpg" alt="Background" class="w-full h-full object-cover opacity-50">
-        </div>
-        <div class="relative container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center text-[#d7b493] mb-12">OUR SERVICES</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Birthday Parties -->
-                <a href="birthday-parties.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
-                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/birthday-1.jpeg');"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
-                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Birthday Parties</p>
-                        <hr class="w-16 border-t-2 border-white mt-3">
-                    </div>
-                </a>
-                
-                <!-- Photography Sessions -->
-                <a href="photography-sessions.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
-                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/photography_session-1.jpg');"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
-                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Photography Sessions</p>
-                        <hr class="w-16 border-t-2 border-white mt-3">
-                    </div>
-                </a>
-                
-                <!-- Weddings -->
-                <a href="weddings.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
-                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/wedding-1.jpg');"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
-                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Weddings</p>
-                        <hr class="w-16 border-t-2 border-white mt-3">
-                    </div>
-                </a>
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+          <img src="./img/Wallpaper aesthetic dry flower.jpeg" alt="Background" class="w-full h-full object-cover opacity-50">
+      </div>
+      <div class="relative container mx-auto px-4">
+          <h2 class="text-5xl font-bold text-center text-[#d7b493] mb-12">OUR SERVICES</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              
+              <!-- Birthday Parties -->
+              <a href="birthday-parties.html" class="relative block group overflow-hidden rounded-lg">
+                  <!-- Image Background with Transition -->
+                  <img src="./img/birthday-1.jpeg" alt="Birthday Parties" class="w-full h-56 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                  <!-- Full Overlay Background that Disappears on Hover -->
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-0 flex items-center justify-center">
+                      <p class="text-xl font-semibold text-[#d7b493]">Birthday Parties</p>
+                  </div>
+              </a>
 
-                <!-- Corporate Events -->
-                <a href="corporate-events.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
-                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/Corporate-1.jpeg');"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
-                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Corporate Events</p>
-                        <hr class="w-16 border-t-2 border-white mt-3">
-                    </div>
-                </a>
-                
-                <!-- Workshops and Seminars -->
-                <a href="workshops-seminars.html" class="relative flex flex-col p-6 bg-white bg-opacity-20 rounded-lg overflow-hidden h-56 group">
-                    <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style="background-image: url('./img/seminar-1.jpeg');"></div>
-                    <div class="relative z-10 flex flex-col items-center justify-center h-full">
-                        <p class="text-xl font-semibold text-[#d7b493] text-hover-brown">Workshops and Seminars</p>
-                        <hr class="w-16 border-t-2 border-white mt-3">
-                    </div>
-                </a>
-            </div>
-        </div>
+              <!-- Photography Sessions -->
+              <a href="photography-sessions.html" class="relative block group overflow-hidden rounded-lg">
+                  <!-- Image Background with Transition -->
+                  <img src="./img/photography_session-1.jpg" alt="Photography Sessions" class="w-full h-56 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                  <!-- Full Overlay Background that Disappears on Hover -->
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-0 flex items-center justify-center">
+                      <p class="text-xl font-semibold text-[#d7b493]">Photography Sessions</p>
+                  </div>
+              </a>
+
+              <!-- Weddings -->
+              <a href="./wedding.html" class="relative block group overflow-hidden rounded-lg">
+                  <!-- Image Background with Transition -->
+                  <img src="./img/wedding-1.jpg" alt="Weddings" class="w-full h-56 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                  <!-- Full Overlay Background that Disappears on Hover -->
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-0 flex items-center justify-center">
+                      <p class="text-xl font-semibold text-[#d7b493]">Weddings</p>
+                  </div>
+              </a>
+
+              <!-- Corporate Events -->
+              <a href="corporate-events.html" class="relative block group overflow-hidden rounded-lg">
+                  <!-- Image Background with Transition -->
+                  <img src="./img/Corporate-1.jpeg" alt="Corporate Events" class="w-full h-56 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                  <!-- Full Overlay Background that Disappears on Hover -->
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-0 flex items-center justify-center">
+                      <p class="text-xl font-semibold text-[#d7b493]">Corporate Events</p>
+                  </div>
+              </a>
+
+              <!-- Workshops and Seminars -->
+              <a href="workshops-seminars.html" class="relative block group overflow-hidden rounded-lg">
+                  <!-- Image Background with Transition -->
+                  <img src="./img/seminar-1.jpeg" alt="Workshops and Seminars" class="w-full h-56 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+                  <!-- Full Overlay Background that Disappears on Hover -->
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-0 flex items-center justify-center">
+                      <p class="text-xl font-semibold text-[#d7b493]">Workshops and Seminars</p>
+                  </div>
+              </a>
+          </div>
+      </div>
     </section>
+
 
     <!-- Carousel Section -->
     <section class="py-12">
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="mb-20 mt-10 text-5xl font-bold text-center text-[#d7b493]">Our Trusted Partners</h2>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="mb-20 mt-10 text-5xl font-bold text-center text-[#d7b493]">OUR TRUSTED CUSTOMERS</h2>
           <div class="relative">
-            <div class="carousel-container">
-              <!-- Slide 1 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+1" alt="Partner 1" class="w-full h-auto rounded-md"/>
+              <div class="carousel-container">
+                  <div class="carousel-wrapper">
+                      <!-- Slide 1 -->
+                      <div class="carousel-slide">
+                          <img src="https://i.pinimg.com/736x/40/26/6a/40266aa91d83b991faee5c9529858a59.jpg" alt="Partner 1"/>
+                      </div>
+                      <!-- Slide 2 -->
+                      <div class="carousel-slide">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR86Meom2DFfevUFUyfehe2x_DeUy855o_mCe5gVHOnTQ_Js3sx0XVQm6g1_KPSHAr-QhI&usqp=CAU" alt="Partner 2"/>
+                      </div>
+                      <!-- Slide 3 -->
+                      <div class="carousel-slide">
+                          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/RWCZER-Legal-IP-Trademarks-CP-MS-logo-740x417-1?wid=406&hei=230&fit=crop" alt="Partner 3"/>
+                      </div>
+                      <!-- Slide 4 -->
+                      <div class="carousel-slide">
+                          <img src="https://static.vecteezy.com/system/resources/thumbnails/020/547/464/small/wedding-alphabet-letters-logos-font-with-tails-typography-elegant-oriental-luxury-classic-serif-fonts-and-number-decorative-vintage-retro-for-logo-branding-illustration-vector.jpg" alt="Partner 4"/>
+                      </div>
+                      <!-- Slide 5 -->
+                      <div class="carousel-slide">
+                          <img src="https://images-platform.99static.com//1MWk5tKFwCZ0JthorVgO3ncwGPc=/282x84:911x713/fit-in/500x500/99designs-contests-attachments/59/59879/attachment_59879713" alt="Partner 5"/>
+                      </div>
+                      <!-- Slide 6 -->
+                      <div class="carousel-slide">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1s63bImW9CdY5yiWTqG7dbaCqZcCuWSUIKg&s" alt="Partner 6"/>
+                      </div>
+                      <!-- Slide 7 -->
+                      <div class="carousel-slide">
+                          <img src="https://cdn.worldvectorlogo.com/logos/tata-1.svg" alt="Partner 7"/>
+                      </div>
+                      <!-- Slide 8 -->
+                      <div class="carousel-slide">
+                          <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/logo-and-brand/01-nvidia-logo-horiz-500x200-2c50-p@2x.png" alt="Partner 8"/>
+                      </div>
+                      <!-- Slide 9 -->
+                      <div class="carousel-slide">
+                          <img src="https://www.ibm.com/brand/experience-guides/developer/b1db1ae501d522a1a4b49613fe07c9f1/01_8-bar-positive.svg" alt="Partner 9"/>
+                      </div>
+                      <!-- Slide 10 -->
+                      <div class="carousel-slide">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMlGz1uM2MQKeG6bApAxzbI5lUx1Y_Gkz2Q&s" alt="Partner 10"/>
+                      </div>
+                      <!-- Duplicate Slides -->
+                      <!-- To create an infinite loop effect, duplicate all slides -->
+                      <div class="carousel-slide">
+                          <img src="https://i.pinimg.com/736x/40/26/6a/40266aa91d83b991faee5c9529858a59.jpg" alt="Partner 1"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR86Meom2DFfevUFUyfehe2x_DeUy855o_mCe5gVHOnTQ_Js3sx0XVQm6g1_KPSHAr-QhI&usqp=CAU" alt="Partner 2"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/RWCZER-Legal-IP-Trademarks-CP-MS-logo-740x417-1?wid=406&hei=230&fit=crop" alt="Partner 3"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://static.vecteezy.com/system/resources/thumbnails/020/547/464/small/wedding-alphabet-letters-logos-font-with-tails-typography-elegant-oriental-luxury-classic-serif-fonts-and-number-decorative-vintage-retro-for-logo-branding-illustration-vector.jpg" alt="Partner 4"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://images-platform.99static.com//1MWk5tKFwCZ0JthorVgO3ncwGPc=/282x84:911x713/fit-in/500x500/99designs-contests-attachments/59/59879/attachment_59879713" alt="Partner 5"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1s63bImW9CdY5yiWTqG7dbaCqZcCuWSUIKg&s" alt="Partner 6"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://cdn.worldvectorlogo.com/logos/tata-1.svg" alt="Partner 7"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/logo-and-brand/01-nvidia-logo-horiz-500x200-2c50-p@2x.png" alt="Partner 8"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://www.ibm.com/brand/experience-guides/developer/b1db1ae501d522a1a4b49613fe07c9f1/01_8-bar-positive.svg" alt="Partner 9"/>
+                      </div>
+                      <div class="carousel-slide">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMlGz1uM2MQKeG6bApAxzbI5lUx1Y_Gkz2Q&s" alt="Partner 10"/>
+                      </div>
+                  </div>
               </div>
-              <!-- Slide 2 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+2" alt="Partner 2" class="w-full h-auto rounded-md"/>
-              </div>
-              <!-- Slide 3 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+3" alt="Partner 3" class="w-full h-auto rounded-md"/>
-              </div>
-              <!-- Slide 4 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
-              </div>
-              <!-- Slide 4 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
-              </div>
-              <!-- Slide 4 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
-              </div>
-              <!-- Slide 4 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
-              </div>
-              <!-- Slide 4 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
-              </div>
-              <!-- Slide 4 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
-              </div>
-              <!-- Slide 4 -->
-              <div class="carousel-slide">
-                <img src="https://via.placeholder.com/200x100?text=Partner+4" alt="Partner 4" class="w-full h-auto rounded-md"/>
-              </div>
-              
-            </div>
-            <!-- Navigation Buttons -->
-            <button class="carousel-button left">&#10094;</button>
-            <button class="carousel-button right">&#10095;</button>
           </div>
-        </div>
-      </section>
+    </section>
+
 
     <!-- FAQ Section -->
     <section class="py-24">
@@ -347,7 +387,7 @@
                   <input type="checkbox" id="accordion1" class="hidden accordion-input">
                   <label for="accordion1" class="accordion-toggle flex items-center justify-between p-4 text-lg font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-100">How to create an account?</label>
                   <div class="accordion-content p-4 bg-white border border-t-0 border-gray-300 rounded-b-md">
-                    <p class="text-gray-700">To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
+                    <p class="text-gray-700">To create an account, find the 'Sign up' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
                   </div>
                 </div>
     
@@ -417,7 +457,7 @@
                 <li>
                 <span class="text-xs uppercase tracking-wide text-gray-500">Email</span>
                 <a href="mailto:info@example.com" class="block text-xl font-medium text-gray-900 hover:opacity-75">
-                    info@example.com
+                    festiveevents@email.com
                 </a>
                 </li>
                 <li>
