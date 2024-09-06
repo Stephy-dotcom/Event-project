@@ -6,13 +6,24 @@
     <title>Cooperateevents</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+      <!-- Font Awesome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@414&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
 
 
     <style>
@@ -108,6 +119,7 @@ h2{
       </style>
     </head>
 
+    <!-- Navbar -->
     <header class="sticky top-0 z-50 w-full bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-md">
       <nav class="w-full px-4">
           <div class="flex items-center justify-between h-16">
@@ -119,40 +131,60 @@ h2{
             
               <!-- Navigation Links in the center with more space between them -->
               <div class="flex-1 flex items-center justify-center space-x-8 text-gray-900">
-                  <a href="#Hero" class="hover:text-gray-600 focus:underline active:underline">Home</a>
+                  <a href="./index.html" class="hover:text-gray-600 focus:underline active:underline">Home</a>
 
-                  <div class="dropdown">
-                    <!-- Button to toggle dropdown -->
-                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Events
-                    </button>
-                    
-                    <!-- Dropdown Menu -->
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#Birthday">Birthday Parties</a></li>
-                        <li><a class="dropdown-item" href="#Photography">Photography Session</a></li>
-                        <li><a class="dropdown-item" href="#Wedding">Weddings</a></li>
-                        <li><a class="dropdown-item" href="#Corporate">Corporate Events , Workshop and Seminars</a></li>
-                        
-                    </ul>
-                </div>
-                  <a href="#Gallery" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
-                  <a href="#About" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
-                  <a href="#Booking" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
-                  <a href="#Contact" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
+                  <!-- Events Link with Dropdown -->
+                  <div class="relative">
+                      <!-- Hidden checkbox to toggle dropdown visibility -->
+                      <input type="checkbox" id="dropdown-toggle" class="hidden" />
+
+                      <!-- Button to open dropdown -->
+                      <label for="dropdown-toggle" class="flex items-center text-gray-900 hover:text-gray-600 cursor-pointer">
+                          <span>Events</span>
+                          <svg class="w-2.5 h-2.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                          </svg>
+                      </label>
+
+                      <!-- Dropdown Menu -->
+                      <div id="dropdown-menu" class="absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2 opacity-0 transition-opacity duration-300">
+                          <ul class="py-2 text-sm text-gray-700">
+                              <li>
+                                  <a href="./birthday.html" class="block px-4 py-2 hover:bg-gray-100">Birthday Parties</a>
+                              </li>
+                              <li>
+                                  <a href="./photography.html" class="block px-4 py-2 hover:bg-gray-100">Photography Session</a>
+                              </li>
+                              <li>
+                                  <a href="./wedding.html" class="block px-4 py-2 hover:bg-gray-100">Weddings</a>
+                              </li>
+                              <li>
+                                  <a href="./corporate.html" class="block px-4 py-2 hover:bg-gray-100">Corporate Events</a>
+                              </li>
+                              <li>
+                                  <a href="./workshop.html" class="block px-4 py-2 hover:bg-gray-100">Workshop and Seminars</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <a href="./gallery.html" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
+                  <a href="./about.html" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
+                  <a href="./booking.html" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
+                  <a href="./contact.html" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
               </div>
               
-             
+              <!-- Buttons on the right end -->
               <div class="hidden sm:flex space-x-4">
                   <!-- Login Button -->
-                  <button class="px-6 py-2 rounded-md bg-[#d7b493] text-white hover:bg-[#bfa37a] transition duration-300">
+                  <a href="./login.html"><button class="px-6 py-2 rounded-md bg-[#d7b493] text-white hover:bg-[#bfa37a] transition duration-300">
                       Login
-                  </button>
+                  </button></a>
 
                   <!-- Sign Up Button -->
-                  <button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#d7b493] hover:bg-[#d7b493] hover:text-white transition duration-300">
+                  <a href="./signup.html"><button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#d7b493] hover:bg-[#d7b493] hover:text-white transition duration-300">
                       Sign Up
-                  </button>
+                  </button></a>
               </div>
           </div>
       </nav>
