@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooperateevents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+*{
+  
+  font-family: "Kalam", cursive;
+  
+}
+
+
+p{
+  font-size: 22px;
+
+}
+
+
+h2{
+  font-family: "Macondo", cursive;
+  font-size: 90px;
+  
+}
+
+.col{
+  width: 100%;
+  height: 400px;
+  border: 2px solid black;
+ 
+}
+.text-outline {
+      text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+    }
+
+
+   @keyframes fullwidth-carousel {
+      0% {
+        transform: translateX(0%);
+      }
+      20% {
+        transform: translateX(0%);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      45% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(-200%);
+      }
+      70% {
+        transform: translateX(-200%);
+      }
+      75% {
+        transform: translateX(-300%);
+      }
+      95% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+    .animate-fullwidth-carousel {
+      animation: fullwidth-carousel 16s infinite;
+    }
+    .image1, .image2 {
+      transition: opacity 5s ease-in-out;
+    }
+
+    .image1 {
+      opacity: 1;
+      animation: stayAndFadeOut 8s infinite;
+    }
+
+    .image2 {
+      opacity: 0;
+      animation: fadeInAfter5 8s infinite;
+    }
+
+    @keyframes stayAndFadeOut {
+      0%, 33.33% { opacity: 1; } 
+      66.66%, 100% { opacity: 0; }
+    }
+
+    @keyframes fadeInAfter5 {
+      0%, 33.33% { opacity: 0; } 
+      66.66%, 100% { opacity: 1; } 
+    }
+      </style>
+    </head>
+
+    <header class="sticky top-0 z-50 w-full bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-md">
+      <nav class="w-full px-4">
+          <div class="flex items-center justify-between h-16">
+              <!-- Mobile Button (for small screens) -->
+              <input type="checkbox" id="menu-toggle" class="hidden">
+              <label for="menu-toggle" class="text-3xl sm:hidden cursor-pointer focus:outline-none">
+                  &#9776;
+              </label>
+            
+              <!-- Navigation Links in the center with more space between them -->
+              <div class="flex-1 flex items-center justify-center space-x-8 text-gray-900">
+                  <a href="#Hero" class="hover:text-gray-600 focus:underline active:underline">Home</a>
+
+                  <div class="dropdown">
+                    <!-- Button to toggle dropdown -->
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Events
+                    </button>
+                    
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#Birthday">Birthday Parties</a></li>
+                        <li><a class="dropdown-item" href="#Photography">Photography Session</a></li>
+                        <li><a class="dropdown-item" href="#Wedding">Weddings</a></li>
+                        <li><a class="dropdown-item" href="#Corporate">Corporate Events , Workshop and Seminars</a></li>
+                        
+                    </ul>
+                </div>
+                  <a href="#Gallery" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
+                  <a href="#About" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
+                  <a href="#Booking" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
+                  <a href="#Contact" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
+              </div>
+              
+             
+              <div class="hidden sm:flex space-x-4">
+                  <!-- Login Button -->
+                  <button class="px-6 py-2 rounded-md bg-[#d7b493] text-white hover:bg-[#bfa37a] transition duration-300">
+                      Login
+                  </button>
+
+                  <!-- Sign Up Button -->
+                  <button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#d7b493] hover:bg-[#d7b493] hover:text-white transition duration-300">
+                      Sign Up
+                  </button>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+
+
+<body>
+  <body class="bg-gray-100" style="position: relative;">
+    <div class="relative w-full h-screen overflow-hidden">
+      <div class="flex w-full h-full animate-fullwidth-carousel">
+        <div class="relative w-full flex-shrink-0 h-full">
+          <img src="./imgs/awardfn.jpg" alt="Image 1" class="object-cover w-full h-full">
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <h2 class="text-white text-8xl font-bold text-outline">Award Function</h2>
+            <p class="text-white text-2xl mt-4" style=" text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Celebrating achievements and honoring excellence in our industry.</p>
+            <div class="w-50 text-center" style="color: rgb(237, 222, 222); padding-top: 40px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+              Our Corporate Special Events Packages are completely customized based on your event needs. With our local vendor knowledge, connections, and social savvy event builds – we offer a creative perspective and solid team to fit your company culture and identity.
+          </div>
+
+          </div>
+        </div>
+        <div class="relative w-full flex-shrink-0 h-full">
+          <img src="./imgs/productlaunch.png" alt="Image 2" class="object-cover w-full h-full">
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <h2 class="text-white text-8xl font-bold text-outline">Product Launching</h2>
+            <p class="text-white text-2xl mt-4" style=" text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Introducing innovative products to the market with style.</p>
+            <div class="w-50 text-center" style="color: rgb(237, 222, 222); padding-top: 40px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+              Our Corporate Special Events Packages are completely customized based on your event needs. With our local vendor knowledge, connections, and social savvy event builds – we offer a creative perspective and solid team to fit your company culture and identity.
+          </div>
+          </div>
+        </div>
+        <div class="relative w-full flex-shrink-0 h-full">
+          <img src="./imgs/bussinessconference.jpg" alt="Image 3" class="object-cover w-full h-full">
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <h2 class="text-white text-8xl font-bold text-outline">Business Conference</h2>
+            <p class="text-white text-2xl mt-4" style=" text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Networking and sharing insights with industry leaders.</p>
+            <div class="w-50 text-center" style="color: rgb(237, 222, 222); padding-top: 40px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+              Our Corporate Special Events Packages are completely customized based on your event needs. With our local vendor knowledge, connections, and social savvy event builds – we offer a creative perspective and solid team to fit your company culture and identity.
+          </div>
+          </div>
+        </div>
+        <div class="relative w-full flex-shrink-0 h-full">
+          <img src="./imgs/cateringser.jpg" alt="Image 4" class="object-cover w-full h-full">
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <h2 class="text-white text-8xl font-bold text-outline">Catering Services</h2>
+            <p class="text-white text-2xl mt-4" style=" text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Delivering exquisite culinary experiences for every event.</p>
+            <div class="w-50 text-center" style="color: rgb(237, 222, 222); padding-top: 40px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+              Our Corporate Special Events Packages are completely customized based on your event needs. With our local vendor knowledge, connections, and social savvy event builds – we offer a creative perspective and solid team to fit your company culture and identity.
+          </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </body>
+
+  
+    
+
+ <body class="bg-gray-100">
+      <div class="grid grid-cols-4 gap-4 p-4">
+       
+        <div class="relative w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
+          <img src="./imgs/cevent.jpg" alt="Image 1" class="absolute inset-0 w-full h-full object-cover image1">
+          <img src="./imgs/cevent1.jpg" alt="Image 2" class="absolute inset-0 w-full h-full object-cover image2">
+        </div>
+        <div class="relative w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
+          <img src="./imgs/pimg.jpg" alt="Image 5" class="absolute inset-0 w-full h-full object-cover image1">
+          <img src="./imgs/pimg1.jpg" alt="Image 6" class="absolute inset-0 w-full h-full object-cover image2">
+        </div>
+        <div class="relative w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
+          <img src="./imgs/cat.jpg" alt="Image 9" class="absolute inset-0 w-full h-full object-cover image1">
+          <img src="./imgs/cat1.jpeg" alt="Image 10" class="absolute inset-0 w-full h-full object-cover image2">
+        </div>
+        <div class="relative w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
+          <img src="./imgs/cevent2.jpg" alt="Image 13" class="absolute inset-0 w-full h-full object-cover image1">
+          <img src="./imgs/cevent3.webp" alt="Image 14" class="absolute inset-0 w-full h-full object-cover image2">
+        </div>
+      </div>
+
+
+      <div><h2 class="text-center" style="font-size: 50px;">Our latest events</h2></div><br>
+      <section>
+        <div class="col" style="position: relative;"><img src="./imgs/awdfn.webp" alt="" width="600px" style="height: 400px;"><p style=" position: absolute; bottom: 80px;left: 650px;top: 30px;"> Our event management team successfully orchestrated a prestigious award function held at Crystal Palace on May 30, 2024. The event was attended by prominent industry leaders, celebrities, and esteemed guests, creating a memorable evening of celebration and recognition.To keep the audience engaged, we arranged top-tier entertainment performances between award segments, which included live music, dance acts, and a stand-up comedy routine. The performances were well-timed and added an extra layer of excitement to the evening. The event concluded with a gala dinner, allowing guests to network and celebrate the night's success. Feedback from attendees was overwhelmingly positive, highlighting our team's professionalism, attention to detail, and ability to create an unforgettable experience.</p></div>
+        <div class="col" style="position: relative;"><img src="./imgs/pdt2.jpg" alt=""width="590px" style="height: 400px; margin-left: 880px;"><p style="position: absolute;bottom: 80px;margin-right: 600px;margin-left: 15px;">Our event management team successfully organized a high-profile product launch at The Grand Hyatt Hotel on August 25, 2024, marking the debut of the AeroFit Pro Fitness Tracker. The event featured a dramatic reveal with a stunning light and sound show, followed by a live demonstration that highlighted the product's key features. Attendees, including industry experts and media, were treated to an immersive experience with interactive product stations and a Q&A session with the developers. The launch garnered extensive media coverage and positive feedback, solidifying the AeroFit Pro Fitness Tracker as a standout innovation in the market.</p></div>
+        <div class="col"style="position: relative;"><img src="./imgs/cevent1.jpg" alt="" width="600px" style="height: 400px;"><p style=" position: absolute; bottom: 80px;left: 650px;">Our event management team expertly organized a dynamic team-building event designed to foster collaboration, communication, and camaraderie among participants. Held at Riverside Conference Center on July 15, 2024, the activities included a mix of interactive challenges, problem-solving exercises, and fun competitions, all tailored to enhance teamwork and boost morale. Each activity was carefully chosen to align with the event's goals, ensuring that participants not only enjoyed themselves but also developed stronger working relationships. The event concluded with a debriefing session, where teams reflected on their experiences and celebrated their achievements, leaving everyone motivated and more connected.</p></div>
+        <div class="col"style="position: relative;"><img src="./imgs/cat2.webp" alt="" width="590px" style="height: 400px;  margin-left: 880px;"><p style="position: absolute;bottom: 80px;margin-right: 600px;margin-left: 15px;">Our event management team provided exceptional catering services for the event at The Regency Ballroom on September 1, 2024, offering a carefully curated menu that catered to diverse tastes and dietary preferences. The culinary experience was designed to complement the event’s theme, featuring a variety of gourmet dishes made from the freshest ingredients. From elegantly plated meals to live cooking stations and a lavish dessert spread, every detail was meticulously planned to ensure a memorable dining experience. Our professional and attentive staff ensured seamless service, allowing guests to enjoy the delicious offerings in a relaxed and sophisticated atmosphere.
+</p></div>
+        <div class="col" style="position: relative;"><img src="./imgs/bussiness1.jpg" alt="" width="600px" style="height: 400px;"><p style=" position: absolute; bottom: 80px;left: 650px;top:20px">Our event management team expertly organized a high-impact business conference at the Metropolitan Convention Center on September 5, 2024. The event brought together industry leaders, entrepreneurs, and professionals for a day filled with insightful keynote speeches, engaging panel discussions, and interactive breakout sessions. Attendees explored the latest industry trends and challenges while networking in a dynamic environment designed for meaningful connections. The conference also featured an exhibition area where companies showcased their innovations. With meticulous attention to detail, from technical arrangements to catering, the event was a seamless success, leaving participants inspired and well-connected.</p></div></div>
+      </section>
+      
+      <section>
+        <h2 style="font-size: 40px; text-align: center;">Reviews</h2>
+      </section>
+<section>
+        <div class="w-full mx-auto h-[500px] p-6 bg-white shadow-lg rounded-lg flex items-center mb-6">
+          <img class="w-1/2 h-full object-cover rounded-l-lg" src="./imgs/manthumbup.jpg" alt="Image 1">
+          <div class="ml-4 w-1/2">
+            <p class="text-gray-700 text-base fs-5">
+              Attending the award function organized by [Event Management Team Name] was a truly impressive experience. From the moment I arrived, it was clear that every detail had been meticulously planned and executed. The venue looked stunning, with elegant decorations that set a perfect tone for the evening. The team managed the event flawlessly, with seamless transitions between segments and a well-coordinated schedule. The staff were attentive and professional, ensuring that everything ran smoothly and that guests were well taken care of. The award presentations were conducted with great efficiency, and the overall ambiance was both lively and sophisticated. It was evident that [Event Management Team Name] is highly skilled in creating memorable events, and I would certainly recommend their services to anyone seeking a top-notch event management team.
+            </p>
+          </div>
+        </div>
+        
+        <div class="w-full mx-auto h-[500px] p-6 bg-white shadow-lg rounded-lg flex items-center mb-6">
+          <img class="w-1/2 h-full object-cover rounded-l-lg" src="./imgs/women.webp" alt="Image 2">
+          <div class="ml-4 w-1/2">
+            <p class="text-gray-700 text-base fs-5">
+              Attending the workshop organized by [Event Management Team Name] was an outstanding experience. From the moment I arrived, it was evident that the event was well-thought-out and executed with great care. The venue was welcoming and thoughtfully arranged, creating a comfortable environment for all participants. The workshop itself was incredibly engaging, with content that was both informative and interactive. The team did a fantastic job of keeping the sessions organized and running smoothly, ensuring that every participant had the opportunity to get involved and learn. The staff were friendly and attentive, always ready to assist and answer questions. Overall, [Event Management Team Name] delivered a workshop that was both enriching and enjoyable, and I would highly recommend their services to anyone looking to host a well-run and impactful event.
+            </p>
+          </div>
+        </div>
+        
+        <div class="w-full mx-auto h-[500px] p-6 bg-white shadow-lg rounded-lg flex items-center mb-6">
+          <img class="w-1/2 h-full object-cover rounded-l-lg" src="./imgs/mansup1.jpg" alt="Image 3">
+          <div class="ml-4 w-1/2">
+        <p class="text-gray-700 text-base fs-5">
+  I recently had the pleasure of experiencing the catering service provided by [Catering Service Name] at an event, and I was thoroughly impressed. The food was exceptional, with a diverse menu that catered to a range of tastes and dietary preferences. Each dish was presented beautifully and tasted as good as it looked. The staff were professional and attentive, ensuring that every guest was well taken care of and that the service was smooth throughout the event. The timing was impeccable, with courses arriving promptly and without interruption. Overall, the catering service significantly enhanced the event, contributing to a memorable and enjoyable experience. I would definitely recommend [Catering Service Name] to anyone looking for high-quality catering with excellent service.
+          </p>
+        </div>
+        </div>
+        </section>
+
+        <!-- Footer Section -->
+    <footer class="bg-[#d7b493] lg:grid lg:grid-cols-5">
+      <div class="relative block h-32 lg:col-span-2 lg:h-full">
+      <img src="./imgs/footer_image.jpg" alt="Event Management" class="absolute inset-0 h-full w-full object-cover"/>
+      </div>
+  
+      <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <!-- About Us Section -->
+          <div>
+          <h2 class="text-lg font-semibold text-gray-900">About Us</h2>
+          <p class="mt-4 text-sm text-gray-700">
+              We are a leading event management company specializing in creating unforgettable experiences. 
+              Our team is dedicated to providing exceptional service and personalized solutions for all types of events.
+          </p>
+          </div>
+  
+          <!-- Testimonials Section -->
+          <div>
+          <h2 class="text-lg font-semibold text-gray-900">Testimonials</h2>
+          <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li>"The team made our wedding day perfect. Highly recommended!" - Jane D.</li>
+              <li>"Exceptional service for our corporate event. Everything went smoothly." - John S.</li>
+          </ul>
+          </div>
+  
+          <!-- Contact Us Section -->
+          <div>
+          <h2 class="text-lg font-semibold text-gray-900">Contact Us</h2>
+          <ul class="mt-4 space-y-2 text-sm text-gray-700">
+              <li>
+              <span class="text-xs uppercase tracking-wide text-gray-500">Email</span>
+              <a href="mailto:info@example.com" class="block text-xl font-medium text-gray-900 hover:opacity-75">
+                  info@example.com
+              </a>
+              </li>
+              <li>
+              <span class="text-xs uppercase tracking-wide text-gray-500">Phone</span>
+              <a href="tel:+0123456789" class="block text-xl font-medium text-gray-900 hover:opacity-75">
+                  0123456789
+              </a>
+              </li>
+          </ul>
+          </div>
+  
+          <!-- Social Media Section -->
+          <div>
+          <h2 class="text-lg font-semibold text-gray-900">Follow Us</h2>
+          <ul class="mt-4 flex gap-6">
+              <li>
+              <a href="https://www.facebook.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                  <span class="sr-only">Facebook</span>
+                  <i class="fab fa-facebook-f fa-lg"></i>
+              </a>
+              </li>
+              <li>
+              <a href="https://www.pinterest.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                  <span class="sr-only">Pinterest</span>
+                  <i class="fab fa-pinterest-p fa-lg"></i>
+              </a>
+              </li>
+              <li>
+              <a href="https://www.twitter.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                  <span class="sr-only">Twitter</span>
+                  <i class="fab fa-twitter fa-lg"></i>
+              </a>
+              </li>
+              <li>
+              <a href="https://www.instagram.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                  <span class="sr-only">Instagram</span>
+                  <i class="fab fa-instagram fa-lg"></i>
+              </a>
+              </li>
+          </ul>
+          </div>
+      </div>
+      </div>
+  </footer>
+   </body>
+</html>

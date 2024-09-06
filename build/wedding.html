@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wedding Events</title>
+         <!-- Font Awesome for icons -->
+          <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@414&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 w-full bg-white bg-opacity-30 backdrop-blur-md border-b border-gray-200 shadow-md">
+        <nav class="w-full px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Mobile Button (for small screens) -->
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="text-3xl sm:hidden cursor-pointer focus:outline-none">
+                    &#9776;
+                </label>
+              
+                <!-- Navigation Links in the center with more space between them -->
+                <div class="flex-1 flex items-center justify-center space-x-8 text-gray-900">
+                    <a href="./index.html" class="hover:text-gray-600 focus:underline active:underline">Home</a>
+
+                    <!-- Events Link with Dropdown -->
+                    <div class="relative">
+                        <!-- Hidden checkbox to toggle dropdown visibility -->
+                        <input type="checkbox" id="dropdown-toggle" class="hidden" />
+
+                        <!-- Button to open dropdown -->
+                        <label for="dropdown-toggle" class="flex items-center text-gray-900 hover:text-gray-600 cursor-pointer">
+                            <span>Events</span>
+                            <svg class="w-2.5 h-2.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </label>
+
+                        <!-- Dropdown Menu -->
+                        <div id="dropdown-menu" class="absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2 opacity-0 transition-opacity duration-300">
+                            <ul class="py-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="./birthday.html" class="block px-4 py-2 hover:bg-gray-100">Birthday Parties</a>
+                                </li>
+                                <li>
+                                    <a href="./photography.html" class="block px-4 py-2 hover:bg-gray-100">Photography Session</a>
+                                </li>
+                                <li>
+                                    <a href="./wedding.html" class="block px-4 py-2 hover:bg-gray-100">Weddings</a>
+                                </li>
+                                <li>
+                                    <a href="./corporate" class="block px-4 py-2 hover:bg-gray-100">Corporate Events</a>
+                                </li>
+                                <li>
+                                    <a href="./seminar.html" class="block px-4 py-2 hover:bg-gray-100">Workshop and Seminars</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="./gallery.html" class="hover:text-gray-600 focus:underline active:underline">Gallery</a>
+                    <a href="./about.html" class="hover:text-gray-600 focus:underline active:underline">About Us</a>
+                    <a href="./booking.html" class="hover:text-gray-600 focus:underline active:underline">Booking</a>
+                    <a href="./contact.html" class="hover:text-gray-600 focus:underline active:underline">Contact Us</a>
+                </div>
+                
+                <!-- Buttons on the right end -->
+                <div class="hidden sm:flex space-x-4">
+                    <!-- Login Button -->
+                    <button class="px-6 py-2 rounded-md bg-[#d7b493] text-white hover:bg-[#bfa37a] transition duration-300">
+                        Login
+                    </button>
+
+                    <!-- Sign Up Button -->
+                    <button class="px-6 py-2 rounded-md bg-transparent border border-[#d7b493] text-[#d7b493] hover:bg-[#d7b493] hover:text-white transition duration-300">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section  -->
+    <section id="hero" class="relative flex flex-col-reverse sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 h-screen">
+        <!-- Background Image -->
+        <img src="./img/wedding/wedding-2.jpg" alt="Wedding" class="absolute inset-0 object-cover w-full h-full z-[-1] opacity-75">
+        
+        <!-- Content -->
+        <article class="relative z-10 flex flex-col items-center justify-center w-full h-full text-center">
+          <h2 class="text-6xl font-bold sm:text-7xl text-[#d7b493] opacity-90">
+            Weddings at Festive Events
+          </h2>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+          <p class="text-2xl mt-8 text-[#d7aa80] italic">
+            Celebrate your big day with us. At Festive Events, we offer bespoke wedding services that cater to every style, ensuring a memorable experience with attention to every detail.
+          </p>
+        </article>
+    </section>
+      
+
+    <!-- service offered -->
+    <section class="py-12 bg-white">
+        <h2 class="mb-20 mt-10 text-5xl font-bold text-center text-[#d7b493]">Ceremony Options</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="relative bg-gray-200 rounded-lg overflow-hidden group">
+                <img src="./img/wedding/wedding-hero-1.jpeg" alt="Traditional Weddings" class="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
+                    <p class="text-[#d7b493] text-lg font-bold text-center">Traditional Weddings</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="relative bg-gray-200 rounded-lg overflow-hidden group">
+                <img src="./img/wedding/wedding-hero-2.jpeg" alt="Beach Weddings" class="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
+                    <p class="text-[#d7b493] text-lg font-bold text-center">Beach Weddings</p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="relative bg-gray-200 rounded-lg overflow-hidden group">
+                <img src="./img/wedding/wedding-hero-3.jpeg" alt="Garden Ceremonies" class="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
+                    <p class="text-[#d7b493] text-lg font-bold text-center">Garden Ceremonies</p>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="relative bg-gray-200 rounded-lg overflow-hidden group">
+                <img src="./img/wedding/wedding-hero-4.jpeg" alt="Destination Weddings" class="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
+                    <p class="text-[#d7b493] text-lg font-bold text-center">Destination Weddings</p>
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="relative bg-gray-200 rounded-lg overflow-hidden group">
+                <img src="./img/wedding/wedding-hero-5.jpeg" alt="Themed Weddings" class="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
+                    <p class="text-[#d7b493] text-lg font-bold text-center">Themed Weddings</p>
+                </div>
+            </div>
+    
+            <!-- Card 6 -->
+            <div class="relative bg-gray-200 rounded-lg overflow-hidden group">
+                <img src="./img/wedding/wedding-hero-6.jpeg" alt="Elegant Weddings" class="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
+                    <p class="text-[#d7b493] text-lg font-bold text-center">Elegant Weddings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!--  Packages Section -->
+    <section class="py-12 bg-white">
+        <h2 class="mb-20 mt-10 text-5xl font-bold text-center text-[#d7b493]">Packages</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Reception Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                <div class="overflow-hidden">
+                    <img src="./img/wedding/wedding-reception.jpeg" alt="Reception Packages" class="w-full h-56 object-cover transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-4">
+                    <p class="text-center text-lg font-bold text-[#d7b493]">Reception Packages: Choose from a variety of packages with tailored dining options and decor themes.</p>
+                </div>
+            </div>
+            
+            <!-- Catering Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                <div class="overflow-hidden">
+                    <img src="./img/wedding/wedding-catering.jpeg" alt="Catering" class="w-full h-56 object-cover transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-4">
+                    <p class="text-center text-lg font-bold text-[#d7b493]">Catering: A range of buffet-style to plated dinner options with sample menus for all dietary preferences.</p>
+                </div>
+            </div>
+            
+            <!-- Photography Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                <div class="overflow-hidden">
+                    <img src="./img/wedding/wedding-photography.jpeg" alt="Photography and Videography" class="w-full h-56 object-cover transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-4">
+                    <p class="text-center text-lg font-bold text-[#d7b493]">Photography & Videography: Professional packages including engagement shoots and full-day coverage.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+      
+    <!-- Footer Section -->
+    <footer class="bg-[#d7b493] lg:grid lg:grid-cols-5">
+        <div class="relative block h-32 lg:col-span-2 lg:h-full">
+        <img src="./img/footer_image.jpg" alt="Event Management" class="absolute inset-0 h-full w-full object-cover"/>
+        </div>
+    
+        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <!-- About Us Section -->
+            <div>
+            <h2 class="text-lg font-semibold text-gray-900">About Us</h2>
+            <p class="mt-4 text-sm text-gray-700">
+                We are a leading event management company specializing in creating unforgettable experiences. 
+                Our team is dedicated to providing exceptional service and personalized solutions for all types of events.
+            </p>
+            </div>
+    
+            <!-- Testimonials Section -->
+            <div>
+            <h2 class="text-lg font-semibold text-gray-900">Testimonials</h2>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                <li>"The team made our wedding day perfect. Highly recommended!" - Jane D.</li>
+                <li>"Exceptional service for our corporate event. Everything went smoothly." - John S.</li>
+            </ul>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div>
+            <h2 class="text-lg font-semibold text-gray-900">Contact Us</h2>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                <li>
+                <span class="text-xs uppercase tracking-wide text-gray-500">Email</span>
+                <a href="mailto:info@example.com" class="block text-xl font-medium text-gray-900 hover:opacity-75">
+                    festiveevents@email.com
+                </a>
+                </li>
+                <li>
+                <span class="text-xs uppercase tracking-wide text-gray-500">Phone</span>
+                <a href="tel:+0123456789" class="block text-xl font-medium text-gray-900 hover:opacity-75">
+                    0123456789
+                </a>
+                </li>
+            </ul>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div>
+            <h2 class="text-lg font-semibold text-gray-900">Follow Us</h2>
+            <ul class="mt-4 flex gap-6">
+                <li>
+                <a href="https://www.facebook.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Facebook</span>
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.pinterest.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Pinterest</span>
+                    <i class="fab fa-pinterest-p fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.twitter.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.instagram.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+      
+</body>
+</html>
